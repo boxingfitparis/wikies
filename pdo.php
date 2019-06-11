@@ -5,3 +5,6 @@ $pdo = new PDO(
     "moussdev",
     "password"
 );
+
+
+$user = $pdo->query('SELECT * FROM user')->fetchAll();
