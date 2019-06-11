@@ -5,3 +5,5 @@ $pdo = new PDO(
     "moussdev",
     "password"
 );
+
+$categories = $pdo->query('SELECT * FROM categorie')->fetchAll();
